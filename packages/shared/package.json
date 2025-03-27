@@ -9,13 +9,13 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "@mantine/core": "^7.0.0",
+    "i18next": "^24.0.0",
+    "react-i18next": "^15.0.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.12",
-    "@types/react-dom": "^19.0.4",
-    "typescript": "^5.0.0"
+    "@types/react": "^18.0.0"
   }
 }
