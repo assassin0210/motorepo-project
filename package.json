@@ -2,15 +2,15 @@
   "private": true,
   "workspaces": [
     "packages/platform",
-    "packages/application-a",
-    "packages/application-b",
+    "packages/sneakers-projec",
+    "packages/shorts-project",
     "packages/shared"
   ],
   "scripts": {
     "install:all": "npm install",
     "dev:platform": "npm --workspace packages/platform run dev",
-    "dev:application-a": "npm --workspace packages/sneakers-project run dev",
-    "dev:application-b": "npm --workspace packages/shorts-project run dev",
+    "dev:sneakers-project": "npm --workspace packages/sneakers-project run dev",
+    "dev:shorts-project": "npm --workspace packages/shorts-project run dev",
     "build:shared": "npm --workspace packages/shared run build",
     "build:all": "npm run build:shared && npm --workspace packages/platform run build && npm --workspace packages/sneakers-project run build && npm --workspace packages/shorts-project run build",
     "lint": "eslint . --ext .ts,.tsx --ignore-path .eslintignore",
