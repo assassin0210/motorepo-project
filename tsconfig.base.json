@@ -13,13 +13,6 @@
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "files": [],
-    "references": [
-      { "path": "./packages/shared" },
-      { "path": "./packages/platform" },
-      { "path": "./packages/sneakers-project" },
-      { "path": "./packages/shorts-project" }
-    ],
     "paths": {
       "@shared": ["packages/shared/src"],
       "@shared/*": ["packages/shared/src/*"],

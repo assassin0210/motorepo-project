@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '@shared/i18n';
-
-import { AppShell } from '@shared';
 import App from './App';
+import '@shared/i18n';
+import { AppShell } from '@shared';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <AppShell>
