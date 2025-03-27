@@ -40,6 +40,8 @@
     "@mantine/core": "^7.17.2",
     "@mantine/hooks": "^7.17.2",
     "i18next": "^24.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-i18next": "^15.4.1"
   }
 }
