@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/platform",
+    "packages/application-a",
+    "packages/application-b",
+    "packages/shared"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev:platform": "npm --workspace packages/platform run dev",
+    "dev:application-a": "npm --workspace packages/sneakers-project run dev",
+    "dev:application-b": "npm --workspace packages/shorts-project run dev",
+    "build:shared": "npm --workspace packages/shared run build",
+    "build:all": "npm run build:shared && npm --workspace packages/platform run build && npm --workspace packages/sneakers-project run build && npm --workspace packages/shorts-project run build",
+    "lint": "eslint . --ext .ts,.tsx --ignore-path .eslintignore",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix --ignore-path .eslintignore"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.4.0",
+    "@types/node": "^22.13.13",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.5",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "postcss": "^8.5.3",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@mantine/core": "^7.17.2",
+    "@mantine/hooks": "^7.17.2",
+    "i18next": "^24.2.3",
+    "react-i18next": "^15.4.1"
+  }
+}

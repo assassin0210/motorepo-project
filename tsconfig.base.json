@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",
+    "strict": true,
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "files": [],
+    "references": [
+      { "path": "./packages/shared" },
+      { "path": "./packages/platform" },
+      { "path": "./packages/sneakers-project" },
+      { "path": "./packages/shorts-project" }
+    ],
+    "paths": {
+      "@shared": ["packages/shared/src"],
+      "@shared/*": ["packages/shared/src/*"],
+      "@application-a/*": ["packages/application-a/src/*"],
+      "@application-b/*": ["packages/application-b/src/*"]
+    }
+  },
+  "include": ["src", "../../node_modules"]
+}
