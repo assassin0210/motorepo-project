@@ -1,54 +1,70 @@
 # 🧱 Monorepo Frontend (Sneakers & Shorts Store)
 
-Микрофронтенд-платформа, собранная с использованием:
+Microfrontend platform built with:
 
 - ⚡️ Vite
 - ⚛️ React 18
 - 🧩 @mantine/core
 - 🌐 i18next
 - 📦 npm workspaces
-- 📁 Монорепозиторий со структурами: platform / shared / shorts-project / sneakers-project
+- 📁 Monorepo structure: platform / shared / shorts-project / sneakers-project
 
 ---
 
-## 📁 Структура проекта
+## 📁 Project Structure
 
-| Путь                | Назначение                      |
-|---------------------|---------------------------------|
-| `packages/platform` | Основной контейнер (host shell) |
-| `packages/shared`   | Общий UI-kit и переводы (i18n)  |
-| `packages/sneakers-project` | Микрофронтенд: Sneakers-project |
-| `packages/shorts-project`   | Микрофронтенд: Shorts-project   |
-
+| Path                         | Description                    |
+|------------------------------|--------------------------------|
+| `packages/platform`          | Main container (host shell)    |
+| `packages/shared`            | Shared UI-kit and i18n         |
+| `packages/sneakers-project`  | Microfrontend: Sneakers project|
+| `packages/shorts-project`    | Microfrontend: Shorts project  |
 
 ---
 
-## 🚀 Установка
+## 🚀 Installation
 
-> 💡 Убедись, что у тебя установлен **Node.js >= 18**
+> 💡 Make sure you have **Node.js >= 18** installed
 
 ```bash
 git clone https://github.com/assassin0210/motorepo-project.git
 cd motorepo-project
 npm install
-
-
-🧪 Скрипты запуска
-• Платформа (host shell)
+```
+🧪 Dev Scripts
+```bash
 npm run dev:platform
-
-• Кроссовки (sneakers-project)
+```
+ • Sneakers project
+```bash
 npm run dev:sneakers-project
+```
 
- • Шорты (ashorts-project)
+ • Shorts project
+```bash
 npm run dev:shorts-project
+```
 
-
-🛠 Сборка
+🛠 Build
+```bash
 npm run build:all
+```
 
+📦 Linting / Formatting
+```bash
+npm run lint        # Lint check
+npm run lint:fix    # Auto-fix issues
+```
+🌍 i18n Support
 
-📦 Линтинг / форматирование
+Based on i18next with JSON translation resources shared via @shared. Language switch is global and works across all microfrontends.
 
-npm run lint        # Проверка
-npm run lint:fix    # С автофиксом
+🧪 Features
+
+ • HMR for microfrontends 
+
+ • Shared UI-kit with HMR support
+
+ • i18next type-safety
+
+ • CI/CD (Vercel or other)
