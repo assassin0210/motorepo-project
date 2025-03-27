@@ -1,0 +1,21 @@
+{
+  "discount": "Discount {{percent}}%",
+  "discountNote": "Valid all summer!",
+
+  "sneakerCollection": "Sneaker Collection",
+  "sneaker": "Sneaker #{{number}}",
+  "sneakerDescription": "Stylish and comfortable sneakers for everyday use.",
+
+  "shortsCollection": "Shorts Collection",
+  "shorts": "Shorts #{{number}}",
+  "shortsDescription": "Comfortable and stylish shorts for the summer season",
+
+  "buttons": {
+    "showMore": "Show more"
+  },
+
+  "tabs": {
+    "sneaker": "Sneaker",
+    "shorts": "Shorts"
+  }
+}

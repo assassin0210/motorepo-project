@@ -1,0 +1,19 @@
+{
+  "discount": "Скидка {{percent}}%",
+  "discountNote": "Действует всё лето!",
+
+  "sneakerCollection": "Коллекция кросовок",
+  "sneaker": "Кросовки",
+  "sneakerDescription": "Стильные и удобные кроссовки для повседневного использования.",
+
+  "shortsCollection": "Коллекция шорт",
+  "shorts": "Шорты №{{number}}",
+  "shortsDescription": "Удобные и стильные шорты на летний сезон",
+  "buttons": {
+    "showMore": "Показать еще "
+  },
+  "tabs": {
+    "sneaker": "Кросовки",
+    "shorts": "Шорты"
+  }
+}
