@@ -6,11 +6,10 @@
     "dev": "vite",
     "build": "npm --workspace @monorepo/shared run build && npm --workspace @monorepo/sneakers-project run build && npm --workspace @monorepo/shorts-project run build && vite build",
     "preview": "vite preview"
-
   },
   "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "vite-plugin-federation": "^0.0.1"
   },
   "devDependencies": {
