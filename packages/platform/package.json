@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm --workspace ../../shared run build && npm --workspace ../../sneakers-project run build && npm --workspace ../../shorts-project run build && vite build",
     "preview": "vite preview"
+
   },
   "dependencies": {
     "react": "^18.0.0",
