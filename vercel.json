@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "packages/platform/index.html",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "packages/platform/dist"
+      }
+    }
+  ],
+  "buildCommand": "npm run build:all",
+  "outputDirectory": "packages/platform/dist"
+}
